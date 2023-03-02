@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-url = "https://www.dnypractice.com.au"
+url = "https://www.example.com.au/74697"
 EMAIL_ADDRESS = os.getenv("EMAIL_USER")
 EMAIL_PASSWORD = os.getenv("EMAIL_PASS")
 
@@ -20,6 +20,9 @@ if r.status_code !=200:
         connection.login(EMAIL_ADDRESS, EMAIL_PASSWORD)
         connection.sendmail(EMAIL_ADDRESS,EMAIL_ADDRESS, msg="Subject:Website Down")
 
+
+
+    
 
 
 
